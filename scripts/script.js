@@ -15,9 +15,16 @@ let userPassword = currentElement.innerHTML;
 const firstName = prompt("Inserisci il tuo nome");
 const secondName = prompt("Inserisci il tuo cognome");
 const favColor = prompt("Inserisci il tuo colore preferito");
+const randomNumber = Math.floor((Math.random() * 10000) + 1);
 
-userPassword = `${userPassword}${firstName}${secondName}${favColor}21`;
 
+//main exercise
+//userPassword = `${userPassword}${firstName}${secondName}${favColor}21`;
+
+//BONUS 2
+userPassword = `${userPassword}${firstName}${secondName}${favColor}${randomNumber}`;
+
+//BONUS 1
 console.log("password = " + userPassword);
 
 currentElement.innerHTML = userPassword;
