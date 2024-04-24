@@ -17,12 +17,11 @@ const favColor = prompt("Inserisci il tuo colore preferito"); //chiedo il colore
 const randomNumber = Math.floor((Math.random() * 10000) + 1); //creo una costante di numero casuale che varia da 1 a 10000 inclusi
 let userPassword = currentElement.innerHTML;  //assegno un valore variabile in formato stringa
 
-
 //main exercise    assegno alla stringa userPassword un insieme di stringhe
 //userPassword = `${userPassword}${firstName}${secondName}${favColor}21`;
 
-//BONUS 2                     //sostituisco il 21 con la costante del numero casuale
-userPassword = `${userPassword}${firstName}${secondName}${favColor}${randomNumber}`;
+//BONUS 2                     //sostituisco il 21 con il numero intero casuale 
+userPassword = `${userPassword}${firstName}${secondName}${favColor}${randomNumber}`; //interpolazione
 
 //BONUS 1 riporto nella console la stringa password = e la stringa composta di userPassword
 console.log("password = " + userPassword);
